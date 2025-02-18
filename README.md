@@ -1,3 +1,5 @@
+Watch this video for installation and usage instructions:  https://youtu.be/-oLEMo7KGHU
+
 I wanted to be able to get notifications about trades that were relevant to me.  For instance I'm most interested in Swing trades and options.  By installing this script I will be able to get email notifications about updates to the trade picks sheet but ONLY for the trades I'm interested in.
 This will reduce clutter in my email inbox and allow me to focus on what's most important to me.
 If you're interested in having the same capability copy my script source code and install it.  Here's how.
