@@ -378,12 +378,13 @@ function displayDataOnSheet(sheetName, dataObj){
     createHeaderRow(sheet);
   }
 
+  // Display data if there is any.
   var lastRow = sheet.getLastRow();
-  sheet.getRange(lastRow + 1, 1, sortedDataArray.length, sortedDataArray[0].length).setValues(sortedDataArray);
-
-  // Remove the data validation on header
-  sheet.getRange(1,1,1,1).setDataValidation(null);
-
+  if(sortedDataArray.length > 0){
+    sheet.getRange(lastRow + 1, 1, sortedDataArray.length, sortedDataArray[0].length).setValues(sortedDataArray);
+  }else{
+    SpreadsheetApp.getUi().alert('No trades match your current search criteria.');  
+  }
 }
 
 // Accessory function to get the data in a sheet.
